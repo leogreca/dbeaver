@@ -520,6 +520,17 @@
                 handlerClass="org.jkiss.dbeaver.ext.postgresql.model.net.PostgreSSLHandlerImpl">
             <objectType name="org.jkiss.dbeaver.ext.postgresql.PostgreDataSourceProvider"/>
         </handler>
+        <handler
+                type="config"
+                id="postgre_krb5"
+                codeName="KRB5"
+                label="KRB 5"
+                description="KRB5 description"
+                secured="false"
+                order="100"
+                handlerClass="org.jkiss.dbeaver.ext.postgresql.model.net.PostgreKrb5HandlerImpl">
+            <objectType name="org.jkiss.dbeaver.ext.postgresql.PostgreDataSourceProvider"/>
+        </handler>
     </extension>
 
     <extension point="org.jkiss.dbeaver.dashboard">
