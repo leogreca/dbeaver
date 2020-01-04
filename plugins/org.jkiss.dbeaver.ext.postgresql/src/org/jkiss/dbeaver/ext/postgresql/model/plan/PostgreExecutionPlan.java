@@ -122,7 +122,9 @@ public class PostgreExecutionPlan extends AbstractExecutionPlan {
                     } else {
                         if (dbResult.next()) {
                             SQLXML planXML = dbResult.getSQLXML(1);
+                            System.out.println(planXML.toString());
                             parsePlanXML(session, planXML);
+                            
                         }
                     }
                 } catch (XMLException e) {
